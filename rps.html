@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS game</title>
+    <style>
+        .heading{
+            background-color: #363774;
+            height:40px;
+            display: flex;
+            color:white;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+        }
+        .choices{
+            display: flex;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            grid-gap: 30px;
+        }
+        img{
+            width:100px;
+            height:100px;
+            border-radius: 50%;
+        }
+        img:hover{
+            height:110px;
+            width:110px;
+            box-shadow: -5px 5px 5px rgb(128, 113, 113);
+        }
+        .scorediv{
+            /* background-color: #b05353; */
+            display: flex;
+            grid-gap:90px;
+            align-items: center;
+            justify-content: center;
+            font-size: xx-large;            
+        }
+        .names{
+            /* background-color: #b05353; */
+            display: flex;
+            grid-gap:40px;
+            align-items: center;
+            justify-content: center;
+            font-size: xx-large;            
+        }
+        .msg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .messege{
+            background-color:#0e2872;
+            border-radius: 10px;
+            padding: 5px;
+            color:white; 
+            font-size: x-large;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="heading">Rock-Paper-Scissors</header>
+
+    <div class="choices">
+         <div class="choice" id="paper"><img src="https://raw.githubusercontent.com/shradha-khapra/JavaScriptSeries/591e313788fc145b92d80cf7f1494199556bec0d/StonePaperScissors/images/paper.png" alt="paper"></div>
+            
+         <div class="choice" id="rock"><img src="https://github.com/shradha-khapra/JavaScriptSeries/blob/main/StonePaperScissors/images/rock.png?raw=true" alt="paper"></div>
+         
+         <div class="choice" id="scissors"> <img src="https://raw.githubusercontent.com/shradha-khapra/JavaScriptSeries/591e313788fc145b92d80cf7f1494199556bec0d/StonePaperScissors/images/scissors.png" alt="paper"></div>  
+    </div>
+    
+    <div class="scorediv">
+        <div class="userscore">
+          0
+        </div>
+        <div class="compscore">
+          0
+        </div>
+    </div>
+    <div class="names">
+        <div class="user">
+          you
+        </div>
+        <div class="comp">
+          comp
+        </div>
+    </div>
+    <div class="msg">
+        <p class="messege">select your choice</p>
+    </div>
+    <script src="rps.js"></script>
+</body>
+</html>
